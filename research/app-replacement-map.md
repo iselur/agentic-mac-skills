@@ -56,13 +56,14 @@ These are the best repo expansion targets because the agent can inspect files, r
 | Mac cleaners/storage analyzers | CleanMyMac, CCleaner, DaisyDisk-like audits | `macos-system-data-audit` | Created |
 | Clutter/download cleaners | Downloads cleanup, desktop cleanup, duplicate-looking file scans | `downloads-desktop-triage` | Created |
 | App inventory/uninstaller helpers | app managers, app size scanners | `mac-app-inventory` | Created |
+| Image conversion/resizing | image compressors/converters | `image-batch-convert` | Created |
+| Backup verification | backup monitor/checker apps | `backup-audit` | Created |
+| Browser/cache cleaners | browser cleaner/cache cleaner utilities | `browser-profile-audit` | Created |
 | PDF utilities | PDFgear, PDF Expert-style batch tasks | `pdf-batch-tools` | Candidate |
 | Office document utilities | Word/PowerPoint/Excel helper workflows | document/spreadsheet/presentation skills | Candidate, often already exists in many agent setups |
 | Meeting assistants | Zoom helper apps, note takers | meeting transcript/audio-to-summary skill | Candidate |
 | Browser/Gmail wrapper apps | Mail for Gmail, web app shells | connector-backed triage/drafting skills | Candidate |
-| Image conversion/resizing | image compressors/converters | image batch conversion skill | Candidate |
 | Video batch utilities | simple transcode/subtitle/extract tasks | ffmpeg-backed video utility skill | Candidate |
-| Backup verification | backup monitor/checker apps | backup audit/report skill | Candidate |
 
 ## Not Good Skill-Replacement Categories
 
@@ -82,7 +83,7 @@ These should stay as real apps/services unless the user only wants a narrow repo
 ## Next Skills Worth Building
 
 1. `pdf-batch-tools`: merge/split/compress/extract/ocr report for local PDFs.
-2. `image-batch-convert`: resize, convert, strip metadata, and make contact sheets.
-3. `video-batch-utility`: use `ffmpeg` for compressing, extracting audio, clipping, and subtitle extraction.
-4. `backup-audit`: inspect Time Machine/local backup health and report stale or oversized backup artifacts.
-5. `browser-profile-audit`: identify browser cache/profile bloat without deleting profiles.
+2. `video-batch-utility`: use `ffmpeg` for compressing, extracting audio, clipping, and subtitle extraction.
+3. `pdf-batch-tools`: merge/split/compress/extract/ocr report for local PDFs.
+4. `calendar-meeting-audit`: inspect calendar/recording/transcript files and produce meeting summaries.
+5. `spreadsheet-clean-room`: normalize CSV/XLSX exports and produce repeatable data-cleaning reports.

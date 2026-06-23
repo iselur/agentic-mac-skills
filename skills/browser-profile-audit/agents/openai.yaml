@@ -1,0 +1,4 @@
+interface:
+  display_name: "Browser Profile Audit"
+  short_description: "Find browser profile and cache bloat"
+  default_prompt: "Use $browser-profile-audit to audit browser profile/cache disk usage without reading browsing history."

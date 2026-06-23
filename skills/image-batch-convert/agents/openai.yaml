@@ -1,0 +1,4 @@
+interface:
+  display_name: "Image Batch Convert"
+  short_description: "Resize and convert image batches safely"
+  default_prompt: "Use $image-batch-convert to plan or run a safe batch resize/format conversion for local images."

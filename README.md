@@ -11,6 +11,9 @@ The first principle: do not build another cleaner app. Let an agent run small re
 | `macos-system-data-audit` | CleanMyMac/CCleaner-style storage mystery scans | Explains macOS System Data, APFS/du gaps, Photos, screen recordings, wallpaper/aerial assets, old ISOs, and VM residues. |
 | `downloads-desktop-triage` | Basic clutter cleaners and duplicate-looking download scans | Inventories Downloads/Desktop large files, installers, archives, screenshots, recordings, and duplicate-looking filenames. |
 | `mac-app-inventory` | Basic app inventory/uninstaller scans | Lists installed apps, bundle sizes, versions, bundle IDs, and large app support/cache/container folders. |
+| `image-batch-convert` | Simple image converter/resizer apps | Dry-run-first batch image resize/format conversion using built-in macOS `sips`, writing copies only. |
+| `backup-audit` | Basic backup health/storage checker apps | Reports Time Machine state, local snapshots, APFS usage, and common backup-sized folders. |
+| `browser-profile-audit` | Browser cache/profile cleaner scans | Reports browser profile/cache/support-folder sizes without reading history contents. |
 
 All scripts are read-only by default. They print report paths under the system temp directory and never delete files.
 
@@ -47,6 +50,10 @@ Use $downloads-desktop-triage to find safe cleanup candidates in Downloads and D
 Use $mac-app-inventory to show which installed apps and app data folders are using the most space.
 ```
 
+```text
+Use $image-batch-convert to dry-run converting these PNGs to 1600px JPEG copies.
+```
+
 ## What This Can and Cannot Replace
 
 Skills can replace utility apps whose core job is deterministic inspection, transformation, or report generation. They cannot replace apps where the value is a real-time service, a secure account, proprietary content, hardware integration, professional interactive UI, or regulated workflow.
@@ -58,6 +65,8 @@ Good skill candidates:
 - app inventory
 - PDF batch operations
 - image/video format conversion
+- backup health checks
+- browser profile/cache bloat audits
 - transcript cleanup and summarization
 - meeting note extraction from local recordings/transcripts
 - CSV/spreadsheet cleanup

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backup Audit"
+  short_description: "Check Time Machine and backup state"
+  default_prompt: "Use $backup-audit to inspect backup health and local snapshots before changing backup settings."
