@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mac App Inventory"
+  short_description: "Audit installed apps and app disk usage"
+  default_prompt: "Use $mac-app-inventory to list installed Mac apps, sizes, and cleanup candidates without deleting anything."

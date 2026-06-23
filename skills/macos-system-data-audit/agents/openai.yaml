@@ -1,0 +1,4 @@
+interface:
+  display_name: "macOS System Data Audit"
+  short_description: "Explain large macOS System Data safely"
+  default_prompt: "Use $macos-system-data-audit to explain what is using disk space on this Mac before deleting anything."

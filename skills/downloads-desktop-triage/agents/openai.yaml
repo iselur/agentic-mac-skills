@@ -1,0 +1,4 @@
+interface:
+  display_name: "Downloads/Desktop Triage"
+  short_description: "Find old installers, archives, and clutter"
+  default_prompt: "Use $downloads-desktop-triage to inventory Downloads and Desktop clutter before cleaning it manually."
