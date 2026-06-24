@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plist Defaults Audit"
+  short_description: "Audit macOS preference plist files safely"
+  default_prompt: "Use $plist-defaults-audit to inspect macOS plist/defaults files without writing any changes."

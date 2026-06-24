@@ -88,7 +88,8 @@ These are the best repo expansion targets because the agent can inspect files, r
 | Developer cache cleaners | Xcode/developer disk cleaners | `developer-cache-audit` | Created |
 | CSV/spreadsheet cleanup | simple data-cleaning utilities | `csv-clean-room` | Created |
 | Archive utilities | The Unarchiver, Unzip | `archive-batch-tools` | Created |
-| PDF utilities | PDFgear, PDF Expert-style batch tasks | `pdf-batch-tools` | Candidate |
+| PDF utilities | PDFgear, PDF Expert-style audit/organizer tasks | `pdf-file-audit` | Created for audit workflows; full editing remains an app workflow |
+| macOS preference inspectors | defaults/plist settings utilities | `plist-defaults-audit` | Created |
 | Office document utilities | Word/PowerPoint/Excel helper workflows | document/spreadsheet/presentation skills | Candidate, often already exists in many agent setups |
 | Meeting assistants | Zoom helper apps, note takers | meeting transcript/audio-to-summary skill | Candidate |
 | Browser/Gmail wrapper apps | Mail for Gmail, web app shells | connector-backed triage/drafting skills | Candidate |
@@ -111,8 +112,8 @@ These should stay as real apps/services unless the user only wants a narrow repo
 
 ## Next Skills Worth Building
 
-1. `pdf-batch-tools`: merge/split/compress/extract/ocr report for local PDFs.
-2. `video-batch-utility`: use `ffmpeg` for compressing, extracting audio, clipping, and subtitle extraction.
-3. `calendar-meeting-audit`: inspect calendar/recording/transcript files and produce meeting summaries.
-4. `plist-defaults-audit`: inspect macOS preferences/defaults before changing them.
-5. `contact-sheet-builder`: create contact sheets for image folders.
+1. `video-batch-utility`: use `ffmpeg` for compressing, extracting audio, clipping, and subtitle extraction.
+2. `calendar-meeting-audit`: inspect calendar/recording/transcript files and produce meeting summaries.
+3. `contact-sheet-builder`: create contact sheets for image folders.
+4. `screenshot-organizer`: group screenshots/recordings by date, app, and project clues.
+5. `browser-shell-audit`: identify web-wrapper apps that could become browser/app-mode shortcuts.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "PDF File Audit"
+  short_description: "Audit local PDF size, pages, and duplicates"
+  default_prompt: "Use $pdf-file-audit to inspect local PDFs and report oversized or duplicate-looking files without modifying originals."

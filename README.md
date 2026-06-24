@@ -6,7 +6,7 @@ The first principle: do not build another cleaner app. Let an agent run small re
 
 ## Included Skills
 
-Current set: 10 reusable skills.
+Current set: 12 reusable skills.
 
 | Skill | Replaces the need for | What it does |
 |---|---|---|
@@ -20,6 +20,8 @@ Current set: 10 reusable skills.
 | `developer-cache-audit` | Xcode/dev disk cleaner scans | Reports Xcode, simulator, package-manager, and project build cache sizes. |
 | `csv-clean-room` | Simple spreadsheet/CSV cleanup utilities | Profiles CSV files and writes normalized clean copies on request. |
 | `archive-batch-tools` | Simple unzip/archive apps | Lists, tests, and extracts ZIP/tar archives into safe output folders. |
+| `pdf-file-audit` | Narrow PDF organizer/audit utilities | Reports large PDFs, page-count metadata, duplicate-looking names, and optional exact hashes. |
+| `plist-defaults-audit` | macOS preference/settings inspection utilities | Audits plist/defaults files by size, domain, readability, and top-level keys without writing changes. |
 
 All scripts are read-only by default. They print report paths under the system temp directory and never delete files.
 
@@ -73,7 +75,7 @@ Good skill candidates:
 - storage audits
 - downloads cleanup planning
 - app inventory
-- PDF batch operations
+- PDF file audits
 - image/video format conversion
 - backup health checks
 - browser profile/cache bloat audits
@@ -81,6 +83,7 @@ Good skill candidates:
 - developer cache reports
 - CSV cleanup and normalization
 - archive listing/testing/extraction
+- macOS plist/defaults inspection
 - transcript cleanup and summarization
 - meeting note extraction from local recordings/transcripts
 - screenshot/report generation

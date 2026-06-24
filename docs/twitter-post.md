@@ -2,13 +2,13 @@ I used Codex to debug why macOS "System Data" was huge.
 
 The interesting bit: I didn't need CleanMyMac / CCleaner style magic.
 
-I turned the workflow into 10 reusable Codex/Claude skills:
+I turned the workflow into 12 reusable Codex/Claude skills:
 
 - read-only disk accounting
 - exact paths + sizes
 - APFS vs du gap explanation
 - screen recordings / Photos / wallpaper assets / VM checks
-- app inventory, browser cache, launch agent, dev cache, archive, image, CSV, backup audits
+- app inventory, browser cache, launch agent, dev cache, archive, image, PDF, plist, CSV, backup audits
 - no deletion unless the human approves
 
 Repo: https://github.com/iselur/agentic-mac-skills
