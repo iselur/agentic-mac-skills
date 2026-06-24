@@ -1,6 +1,6 @@
 # App Replacement Map
 
-Snapshot date: 2026-06-23.
+Snapshot date: 2026-06-23 and 2026-06-24.
 
 Sources:
 
@@ -8,6 +8,8 @@ Sources:
 - Apple legacy RSS: `https://itunes.apple.com/us/rss/toppaidmacapps/limit=50/json`
 - Apple Marketing Tools RSS: `https://rss.marketingtools.apple.com/api/v2/us/apps/top-free/50/apps.json`
 - Apple Marketing Tools RSS: `https://rss.marketingtools.apple.com/api/v2/us/apps/top-paid/50/apps.json`
+- Mac App Store UI screenshot capture: `https://apps.apple.com/us/mac/charts/36?chart=top-paid`
+- Mac App Store UI screenshot capture: `https://apps.apple.com/us/mac/charts/6007?chart=top-paid`
 
 Raw snapshots are in `research/data/`.
 
@@ -15,7 +17,9 @@ Raw snapshots are in `research/data/`.
 
 The legacy `topfreemacapps` endpoint returned 50 entries and is the strongest Mac-specific chart signal in this repo.
 
-The legacy `toppaidmacapps` endpoint returned a valid feed with zero entries at capture time. Because that is weak evidence for paid Mac rankings, this repo does not pretend to have a current top-50 paid Mac chart. The all-App-Store paid feed is included separately as a broader signal, not as a Mac-specific ranking.
+The legacy `toppaidmacapps` endpoint returned a valid feed with zero entries at capture time. The better paid Mac source is the Mac App Store UI itself. Val captured the overall paid Mac chart and paid Productivity chart on 2026-06-24; the OCR-assisted manual transcription is stored in `research/data/top-paid-mac-apps-us-app-store-ui-2026-06-24.json`.
+
+The all-App-Store paid feed is still included separately as a broader signal, not as a Mac-specific ranking.
 
 ## Top Free Mac Apps: Replacement Judgment
 
@@ -95,6 +99,27 @@ These are the best repo expansion targets because the agent can inspect files, r
 | Meeting assistants | Zoom helper apps, note takers | meeting transcript/audio-to-summary skill | Candidate |
 | Browser/Gmail wrapper apps | Mail for Gmail, web app shells | connector-backed triage/drafting skills | Candidate |
 | Video batch utilities | simple transcode/subtitle/extract tasks | ffmpeg-backed video utility skill | Candidate |
+
+## Paid Mac Chart Signals
+
+The paid Mac chart is more useful than the free chart for this repo because paid utilities are often narrow, local, and deterministic.
+
+High-confidence paid-chart replacements already covered:
+
+- DaisyDisk and GrandPerspective -> `macos-system-data-audit`
+- RAR Extractor and Keka -> `archive-batch-tools`
+- PDF Expert and PDF Reader Pro audit/triage workflows -> `pdf-file-audit`
+- MediaInfo and LosslessCut-style file inspection workflows -> future media metadata skill
+- Msg Converter Pro and Offline Files-style file inventory workflows -> future file-format audit skills
+- Screenshot/annotation utilities such as Greenshot/Presentify/FinalShot -> `screenshot-organizer` partially covers organization, not live annotation
+
+Paid-chart categories that should mostly stay as apps:
+
+- Logic Pro, Final Cut Pro, Pixelmator Pro, MainStage, Motion, Sketchbook Pro: interactive creative tools.
+- Shadowrocket, Quantumult X, VPN/proxy tools: network/security clients.
+- Things 3, Scrivener, iA Writer, Final Draft: skills can help with content, but the app value is interactive project/UI state.
+- BetterSnapTool, Magnet, Moom Classic: real-time window management; skills can document shortcuts/config, but not replace the resident utility.
+- pwSafe and password managers: secret storage and autofill threat model.
 
 ## Not Good Skill-Replacement Categories
 
