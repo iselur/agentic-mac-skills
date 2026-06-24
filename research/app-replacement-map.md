@@ -13,15 +13,22 @@ Sources:
 
 Raw snapshots are in `research/data/`.
 
+Full row-level mapping:
+
+- `research/top-100-category-mapping.md` maps every parsed app row to a category and replacement judgment: free overall top 98, paid overall top 100, and paid Productivity top 100.
+- `research/data/top-mac-app-category-mapping-2026-06-24.json` is the canonical structured version.
+
 ## Source Notes
 
-The legacy `topfreemacapps` endpoint returned 50 entries and is the strongest Mac-specific chart signal in this repo.
+The original legacy `topfreemacapps` capture returned 50 entries. A later parsed local free Mac chart feed returned 98 rows for the requested top 100; those rows are mapped in the full category mapping.
 
 The legacy `toppaidmacapps` endpoint returned a valid feed with zero entries at capture time. The better paid Mac source is the Mac App Store UI itself. Val captured the overall paid Mac chart and paid Productivity chart on 2026-06-24; the OCR-assisted manual transcription is stored in `research/data/top-paid-mac-apps-us-app-store-ui-2026-06-24.json`.
 
 The all-App-Store paid feed is still included separately as a broader signal, not as a Mac-specific ranking.
 
 ## Top Free Mac Apps: Replacement Judgment
+
+This section is the earlier top-50 sketch. Use `research/top-100-category-mapping.md` for the full mapping with free, paid overall, and paid Productivity chart rows.
 
 | Rank | App | Category | Skill replacement? | Reason |
 |---:|---|---|---|---|

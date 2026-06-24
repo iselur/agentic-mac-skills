@@ -2,6 +2,11 @@
 
 Captured on 2026-06-23 and 2026-06-24.
 
+Full category mapping:
+
+- `research/top-100-category-mapping.md` maps free overall top 98, paid overall top 100, and paid Productivity top 100.
+- `research/data/top-mac-app-category-mapping-2026-06-24.json` is the structured mapping artifact.
+
 ## Top Free Mac Apps
 
 Source: `https://itunes.apple.com/us/rss/topfreemacapps/limit=50/json`
@@ -73,6 +78,8 @@ Apple web chart URLs visible from the Mac App Store UI:
 - Paid Productivity chart: `https://apps.apple.com/us/mac/charts/6007?chart=top-paid`
 
 The structured screenshot transcription is in `research/data/top-paid-mac-apps-us-app-store-ui-2026-06-24.json`.
+
+That transcription now includes paid overall ranks 1-100 and paid Productivity ranks 1-100 with visible screenshot prices. `Open`, `Open/Purchased`, or `View` mean the storefront hid the price behind the account state.
 
 Top 50 paid Mac apps from the overall Mac App Store UI capture:
 
