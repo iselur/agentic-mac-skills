@@ -17,6 +17,7 @@ The first principle: do not build another cleaner app. Let an agent run small re
 | `launch-agent-audit` | Startup item/background service scanners | Lists launch agents/daemons and login/background item clues without disabling anything. |
 | `developer-cache-audit` | Xcode/dev disk cleaner scans | Reports Xcode, simulator, package-manager, and project build cache sizes. |
 | `csv-clean-room` | Simple spreadsheet/CSV cleanup utilities | Profiles CSV files and writes normalized clean copies on request. |
+| `archive-batch-tools` | Simple unzip/archive apps | Lists, tests, and extracts ZIP/tar archives into safe output folders. |
 
 All scripts are read-only by default. They print report paths under the system temp directory and never delete files.
 
@@ -77,6 +78,7 @@ Good skill candidates:
 - startup/background item audits
 - developer cache reports
 - CSV cleanup and normalization
+- archive listing/testing/extraction
 - transcript cleanup and summarization
 - meeting note extraction from local recordings/transcripts
 - CSV/spreadsheet cleanup

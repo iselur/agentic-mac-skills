@@ -87,6 +87,7 @@ These are the best repo expansion targets because the agent can inspect files, r
 | Startup/background item managers | login item scanners, cleaner startup modules | `launch-agent-audit` | Created |
 | Developer cache cleaners | Xcode/developer disk cleaners | `developer-cache-audit` | Created |
 | CSV/spreadsheet cleanup | simple data-cleaning utilities | `csv-clean-room` | Created |
+| Archive utilities | The Unarchiver, Unzip | `archive-batch-tools` | Created |
 | PDF utilities | PDFgear, PDF Expert-style batch tasks | `pdf-batch-tools` | Candidate |
 | Office document utilities | Word/PowerPoint/Excel helper workflows | document/spreadsheet/presentation skills | Candidate, often already exists in many agent setups |
 | Meeting assistants | Zoom helper apps, note takers | meeting transcript/audio-to-summary skill | Candidate |
@@ -113,5 +114,5 @@ These should stay as real apps/services unless the user only wants a narrow repo
 1. `pdf-batch-tools`: merge/split/compress/extract/ocr report for local PDFs.
 2. `video-batch-utility`: use `ffmpeg` for compressing, extracting audio, clipping, and subtitle extraction.
 3. `calendar-meeting-audit`: inspect calendar/recording/transcript files and produce meeting summaries.
-4. `archive-batch-tools`: list, test, and extract archives safely.
-5. `plist-defaults-audit`: inspect macOS preferences/defaults before changing them.
+4. `plist-defaults-audit`: inspect macOS preferences/defaults before changing them.
+5. `contact-sheet-builder`: create contact sheets for image folders.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Archive Batch Tools"
+  short_description: "List, test, and extract common archives"
+  default_prompt: "Use $archive-batch-tools to inspect archives and extract them into a safe output folder."
