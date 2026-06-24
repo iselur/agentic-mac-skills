@@ -411,6 +411,13 @@ class Category:
     reason: str
 
 
+@dataclass(frozen=True)
+class AgentReadiness:
+    level: str
+    basis: str
+    evidence_key: str
+
+
 CATEGORY_META = {
     "storage_audit": Category(
         "storage_audit",
@@ -621,6 +628,304 @@ CATEGORY_META = {
         "unknown",
         "manual review",
         "Parsed chart row lacks enough product signal for a defensible replacement call.",
+    ),
+}
+
+
+READINESS_BY_CATEGORY = {
+    "ai_chat_or_writing": AgentReadiness(
+        "native_agent_surface",
+        "The product category is already an AI/chat/writing surface; agent substitution depends on account-specific features.",
+        "category_inference",
+    ),
+    "archive_tools": AgentReadiness(
+        "scriptable_cli",
+        "Core actions map to system or open-source archive commands and this repo's archive skill.",
+        "repo_skill",
+    ),
+    "backup_sync_storage_service": AgentReadiness(
+        "scriptable_cli",
+        "Backup status and inventory can be inspected by local CLI tools; sync engines remain app/service-owned.",
+        "repo_skill",
+    ),
+    "browser_extension_or_web_wrapper": AgentReadiness(
+        "web_automation",
+        "Many rows are browser wrappers/extensions that can be replaced or assisted by browser automation, shortcuts, or service APIs.",
+        "category_inference",
+    ),
+    "clipboard_automation": AgentReadiness(
+        "scriptable_cli",
+        "Simple clipboard transforms can be scripted; persistent clipboard history needs a resident utility.",
+        "category_inference",
+    ),
+    "creative_pro_editor": AgentReadiness(
+        "partial_file_automation",
+        "Files and exports are automatable; the live creative canvas/timeline is not agent-native.",
+        "category_inference",
+    ),
+    "data_visualization_or_analysis": AgentReadiness(
+        "native_agent_surface",
+        "One-off analysis and generated tables/charts map directly to agent spreadsheet/data workflows.",
+        "repo_skill",
+    ),
+    "developer_tools": AgentReadiness(
+        "native_agent_surface",
+        "Developer workflows commonly expose CLIs, APIs, local files, and MCP-ready repo context.",
+        "mcp_reference",
+    ),
+    "diagram_mindmap": AgentReadiness(
+        "partial_file_automation",
+        "Agents can generate diagram artifacts; manual canvas interaction remains app-specific.",
+        "category_inference",
+    ),
+    "education_exam_service": AgentReadiness(
+        "not_a_fit",
+        "Exam delivery and identity workflows should not be replaced by agent automation.",
+        "category_inference",
+    ),
+    "email_calendar_meetings": AgentReadiness(
+        "api_or_connector_ready",
+        "Email/calendar/meeting systems commonly expose APIs or connectors for search, drafting, summaries, and scheduling.",
+        "mcp_reference",
+    ),
+    "file_manager_transfer": AgentReadiness(
+        "scriptable_cli",
+        "Many transfer and file-management flows can be handled by shell tools, rsync-like workflows, or provider APIs.",
+        "category_inference",
+    ),
+    "genealogy_reference": AgentReadiness(
+        "partial_file_automation",
+        "Imports, exports, and reports can be generated if data files are accessible; the domain database UI remains app-specific.",
+        "category_inference",
+    ),
+    "hardware_device": AgentReadiness(
+        "not_a_fit",
+        "Drivers and hardware control require vendor/native integrations.",
+        "category_inference",
+    ),
+    "image_media_batch": AgentReadiness(
+        "scriptable_cli",
+        "Batch image conversion, metadata, and duplicate scans are CLI/file-workflow friendly.",
+        "repo_skill",
+    ),
+    "messaging_social": AgentReadiness(
+        "low",
+        "Messaging APIs may exist, but personal encrypted/push UX and network effects are not agent-replacement targets.",
+        "category_inference",
+    ),
+    "music_audio_pro": AgentReadiness(
+        "partial_file_automation",
+        "Metadata, conversion, and filing are automatable; DAW/instrument/notation interaction remains app-specific.",
+        "category_inference",
+    ),
+    "network_security": AgentReadiness(
+        "not_a_fit",
+        "VPN/proxy/MFA tools have OS networking and trust boundaries that should not be replaced by ad hoc agent code.",
+        "category_inference",
+    ),
+    "notes_tasks_writing_app": AgentReadiness(
+        "api_or_connector_ready",
+        "Drafting, summarization, and migration are agent-friendly; persistent app state may require APIs or export formats.",
+        "category_inference",
+    ),
+    "office_documents": AgentReadiness(
+        "api_or_connector_ready",
+        "Document/spreadsheet/presentation generation and conversion are supported by agent file workflows and provider APIs.",
+        "repo_skill",
+    ),
+    "password_identity_security": AgentReadiness(
+        "not_a_fit",
+        "Secret storage, autofill, encryption, and MFA are the wrong trust model for coding-agent replacement.",
+        "category_inference",
+    ),
+    "pdf_document_tools": AgentReadiness(
+        "scriptable_cli",
+        "Batch PDF inspection and manipulation can use local libraries/tools; visual signing/editing remains app-specific.",
+        "repo_skill",
+    ),
+    "presentation_screen_tools": AgentReadiness(
+        "partial_file_automation",
+        "Deck generation is agent-friendly; live overlays, remotes, and screen controls need resident utilities.",
+        "category_inference",
+    ),
+    "remote_desktop_virtualization": AgentReadiness(
+        "not_a_fit",
+        "VMs and remote desktop clients require native live session and OS/network integration.",
+        "category_inference",
+    ),
+    "screenshot_ocr_capture": AgentReadiness(
+        "scriptable_cli",
+        "Post-capture organization and OCR can be automated; capture hotkeys and overlays remain resident behavior.",
+        "repo_skill",
+    ),
+    "shopping_service": AgentReadiness(
+        "low",
+        "Retail/account extension behavior is service-bound and not a local replacement target.",
+        "category_inference",
+    ),
+    "storage_audit": AgentReadiness(
+        "scriptable_cli",
+        "Disk inspection maps to local CLI probes and this repo's storage audit skill.",
+        "repo_skill",
+    ),
+    "streaming_content": AgentReadiness(
+        "not_a_fit",
+        "Licensed content, DRM, and playback UX are service-bound.",
+        "category_inference",
+    ),
+    "system_utility": AgentReadiness(
+        "partial_file_automation",
+        "Inspection/config generation can be automated; always-on menu-bar/input behavior usually needs an app.",
+        "category_inference",
+    ),
+    "timer_focus_utility": AgentReadiness(
+        "partial_file_automation",
+        "Simple timers and reports are scriptable; reminders and always-on focus behavior remain resident utilities.",
+        "category_inference",
+    ),
+    "transcription_audio_notes": AgentReadiness(
+        "native_agent_surface",
+        "Transcription and summarization are native agent/LLM workflows when audio files are accessible.",
+        "category_inference",
+    ),
+    "unknown_or_low_signal": AgentReadiness(
+        "unknown",
+        "Insufficient product signal in the parsed chart row.",
+        "manual_review",
+    ),
+    "video_media_batch": AgentReadiness(
+        "scriptable_cli",
+        "ffmpeg-style transcode, trim, metadata, and caption workflows are CLI/file-workflow friendly.",
+        "category_inference",
+    ),
+    "web_download_archive": AgentReadiness(
+        "web_automation",
+        "Browser automation and scripted download/export flows can handle much of the job.",
+        "category_inference",
+    ),
+    "window_workspace_management": AgentReadiness(
+        "low",
+        "Core value is resident accessibility/input/window behavior rather than an agent callable workflow.",
+        "category_inference",
+    ),
+}
+
+
+READINESS_BY_APP = {
+    "Notion Web Clipper": AgentReadiness(
+        "native_mcp",
+        "Notion has an official hosted MCP server for agents; the web clipper itself is still an extension.",
+        "official_notion_mcp",
+    ),
+    "Canva: AI Video & Photo Editor": AgentReadiness(
+        "native_mcp",
+        "Canva has an official MCP setup path for AI tools; the visual design canvas still remains Canva.",
+        "official_canva_mcp",
+    ),
+    "GitHub": AgentReadiness(
+        "native_mcp",
+        "GitHub has an official MCP server for repo, issue, PR, and workflow automation.",
+        "official_github_mcp",
+    ),
+    "Slack for Desktop": AgentReadiness(
+        "api_or_connector_ready",
+        "Slack has mature developer APIs, CLI/docs surfaces, and LLM-friendly docs; live chat remains the app.",
+        "official_slack_api",
+    ),
+    "Telegram": AgentReadiness(
+        "api_or_connector_ready",
+        "Telegram exposes Bot APIs and webhooks, but the personal encrypted chat client is not replaced.",
+        "official_telegram_bot_api",
+    ),
+    "Tailscale": AgentReadiness(
+        "scriptable_cli",
+        "Tailscale exposes a documented CLI; the VPN client and trust boundary remain native.",
+        "official_tailscale_cli",
+    ),
+    "UTM Virtual Machines": AgentReadiness(
+        "scriptable_cli",
+        "UTM is open source and exposes command/control surfaces, but live VM sessions remain native.",
+        "official_utm_repo",
+    ),
+    "Cyberduck": AgentReadiness(
+        "scriptable_cli",
+        "Cyberduck has the official `duck` CLI for scripted transfer workflows.",
+        "official_cyberduck_cli",
+    ),
+    "MediaInfo": AgentReadiness(
+        "scriptable_cli",
+        "MediaInfo has a CLI and library-backed metadata workflow.",
+        "official_mediainfo_cli",
+    ),
+    "LosslessCut": AgentReadiness(
+        "scriptable_cli",
+        "LosslessCut is open source and has CLI/API surfaces for basic automation.",
+        "official_losslesscut_repo",
+    ),
+    "Things 3": AgentReadiness(
+        "api_or_connector_ready",
+        "Things supports URL scheme and x-callback automation; persistent task UI remains the app.",
+        "official_things_url_scheme",
+    ),
+    "iA Writer": AgentReadiness(
+        "api_or_connector_ready",
+        "iA Writer supports Apple Shortcuts and URL commands; writing workflow remains file/app based.",
+        "official_ia_writer_shortcuts",
+    ),
+    "Due - Reminders & Timers": AgentReadiness(
+        "api_or_connector_ready",
+        "Due documents a URL scheme and x-callback automation surface.",
+        "official_due_url_scheme",
+    ),
+    "Linear": AgentReadiness(
+        "native_mcp",
+        "Linear has an official remote MCP server with Codex and Claude setup instructions.",
+        "official_linear_mcp",
+    ),
+    "Microsoft Word": AgentReadiness(
+        "api_or_connector_ready",
+        "Office documents can be generated and edited through file workflows and Microsoft Graph/Office automation.",
+        "category_inference",
+    ),
+    "Microsoft Excel": AgentReadiness(
+        "api_or_connector_ready",
+        "Spreadsheets can be generated and transformed through file workflows and Microsoft/Google APIs.",
+        "category_inference",
+    ),
+    "Microsoft PowerPoint": AgentReadiness(
+        "api_or_connector_ready",
+        "Decks can be generated and transformed through file workflows and Microsoft/Google APIs.",
+        "category_inference",
+    ),
+    "Microsoft Outlook": AgentReadiness(
+        "api_or_connector_ready",
+        "Mail and calendar workflows can be automated through Microsoft Graph-style APIs/connectors.",
+        "category_inference",
+    ),
+    "Microsoft OneNote": AgentReadiness(
+        "api_or_connector_ready",
+        "OneNote exposes Microsoft Graph APIs for notebook/page workflows; the canvas UI remains native.",
+        "official_microsoft_graph",
+    ),
+    "OneDrive": AgentReadiness(
+        "api_or_connector_ready",
+        "Cloud file inventory and transfer can be handled through provider APIs; sync remains the native client.",
+        "category_inference",
+    ),
+    "Xcode": AgentReadiness(
+        "scriptable_cli",
+        "Xcode exposes developer CLI workflows such as builds and developer cache paths; the IDE remains native.",
+        "category_inference",
+    ),
+    "Apple Developer": AgentReadiness(
+        "api_or_connector_ready",
+        "Apple developer workflows expose App Store Connect APIs, but portal/account actions remain specialized.",
+        "apple_app_store_connect_api",
+    ),
+    "TestFlight": AgentReadiness(
+        "api_or_connector_ready",
+        "TestFlight is reachable through App Store Connect workflows; the distribution service itself remains Apple-owned.",
+        "apple_app_store_connect_api",
     ),
 }
 
@@ -933,8 +1238,13 @@ def classify(name: str) -> Category:
     return CATEGORY_META["unknown_or_low_signal"]
 
 
+def readiness_for(name: str, category_label: str) -> AgentReadiness:
+    return READINESS_BY_APP.get(name, READINESS_BY_CATEGORY[category_label])
+
+
 def row(chart: str, rank: int, name: str, price: str, store_category: str) -> dict[str, str | int]:
     category = classify(name)
+    readiness = readiness_for(name, category.label)
     return {
         "chart": chart,
         "rank": rank,
@@ -945,6 +1255,9 @@ def row(chart: str, rank: int, name: str, price: str, store_category: str) -> di
         "replaceability": category.replaceability,
         "skill_or_tool_fit": category.skill_fit,
         "reason": category.reason,
+        "ai_agent_readiness": readiness.level,
+        "ai_agent_readiness_basis": readiness.basis,
+        "ai_agent_readiness_evidence_key": readiness.evidence_key,
     }
 
 
@@ -990,6 +1303,17 @@ def write_json(rows_by_chart: dict[str, list[dict[str, str | int]]]) -> None:
             }
             for key, value in sorted(CATEGORY_META.items())
         },
+        "ai_agent_readiness_definitions": {
+            "native_mcp": "Official app/vendor MCP server exists.",
+            "native_agent_surface": "The product category is already an AI/agent-native workflow or maps directly to agent execution.",
+            "api_or_connector_ready": "Official API, connector, or provider automation surface exists, but not necessarily app-specific MCP.",
+            "scriptable_cli": "Core workflow is accessible through local CLI tools, libraries, or generated scripts.",
+            "web_automation": "Workflow can be automated through browser automation or service web UI, with session/ToS caveats.",
+            "partial_file_automation": "Files/exports/config can be automated; core live UI remains app-specific.",
+            "low": "Some automation may exist, but the core job is not a good agent replacement target.",
+            "not_a_fit": "Trust, OS integration, hardware, DRM, or real-time service behavior makes agent replacement inappropriate.",
+            "unknown": "Insufficient product signal.",
+        },
         "charts": rows_by_chart,
     }
     target = DATA_DIR / "top-mac-app-category-mapping-2026-06-24.json"
@@ -1031,12 +1355,12 @@ def app_ref(item: dict[str, str | int]) -> str:
 
 
 def table_rows(items: list[dict[str, str | int]]) -> list[str]:
-    lines = ["| Rank | App | Price | Store category | Mapped category | Replaceability | Skill/tool fit | Why |"]
-    lines.append("|---:|---|---|---|---|---|---|---|")
+    lines = ["| Rank | App | Price | Store category | Mapped category | Core replaceability | AI-agent readiness | Skill/tool fit | Why |"]
+    lines.append("|---:|---|---|---|---|---|---|---|---|")
     for item in items:
         lines.append(
             "| {rank} | {name} | {price} | {store_category} | {mapped_category} | "
-            "{replaceability} | {skill_or_tool_fit} | {reason} |".format(**item)
+            "{replaceability} | {ai_agent_readiness} | {skill_or_tool_fit} | {reason} |".format(**item)
         )
     return lines
 
@@ -1068,6 +1392,7 @@ def write_markdown(rows_by_chart: dict[str, list[dict[str, str | int]]]) -> None
         "- `partial` means an agent can replace batch/report/content workflows but not the live UI, account, service, or resident app behavior.",
         "- `no` means the app depends on a network, hardware, identity, real-time UI, or trust model that a coding-agent skill should not replace.",
         "- `unknown` means the parsed name did not carry enough product signal for a defensible replacement call.",
+        "- AI-agent readiness is conservative: it records whether the app/category has a native MCP/agent surface, API/connector surface, CLI/script surface, browser automation path, partial file automation path, low readiness, or is not a fit.",
         "",
         "## Category Rollup",
         "",

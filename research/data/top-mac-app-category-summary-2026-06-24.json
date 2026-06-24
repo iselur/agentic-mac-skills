@@ -1,0 +1,1623 @@
+{
+  "captured_at": "2026-06-24T17:00:00+01:00",
+  "definitions": {
+    "core_replaceable": "The app's core job can plausibly be replaced by a skill, plugin, connector, CLI, script, or quick agent-built tool.",
+    "assistable_not_core_replaceable": "Agents can handle adjacent workflows, but the app's core value remains a live UI, persistent state, creative canvas, menu-bar behavior, or domain database.",
+    "hard_app_or_service": "The app is mainly a network, trust, hardware, streaming, identity, or OS-integration surface."
+  },
+  "charts": {
+    "free_overall": {
+      "total": 98,
+      "replacement_buckets": {
+        "assistable_not_core_replaceable": {
+          "count": 19,
+          "percent": 19.4
+        },
+        "core_replaceable": {
+          "count": 47,
+          "percent": 48.0
+        },
+        "hard_app_or_service": {
+          "count": 32,
+          "percent": 32.7
+        }
+      },
+      "raw_replaceability": {
+        "no": {
+          "count": 32,
+          "percent": 32.7
+        },
+        "partial": {
+          "count": 63,
+          "percent": 64.3
+        },
+        "yes": {
+          "count": 3,
+          "percent": 3.1
+        }
+      },
+      "ai_agent_readiness": {
+        "api_or_connector_ready": {
+          "count": 25,
+          "percent": 25.5
+        },
+        "low": {
+          "count": 6,
+          "percent": 6.1
+        },
+        "native_agent_surface": {
+          "count": 6,
+          "percent": 6.1
+        },
+        "native_mcp": {
+          "count": 2,
+          "percent": 2.0
+        },
+        "not_a_fit": {
+          "count": 24,
+          "percent": 24.5
+        },
+        "partial_file_automation": {
+          "count": 14,
+          "percent": 14.3
+        },
+        "scriptable_cli": {
+          "count": 10,
+          "percent": 10.2
+        },
+        "web_automation": {
+          "count": 11,
+          "percent": 11.2
+        }
+      },
+      "top_categories": [
+        {
+          "category": "email_calendar_meetings",
+          "count": 12,
+          "percent": 12.2
+        },
+        {
+          "category": "browser_extension_or_web_wrapper",
+          "count": 12,
+          "percent": 12.2
+        },
+        {
+          "category": "network_security",
+          "count": 10,
+          "percent": 10.2
+        },
+        {
+          "category": "streaming_content",
+          "count": 7,
+          "percent": 7.1
+        },
+        {
+          "category": "office_documents",
+          "count": 6,
+          "percent": 6.1
+        },
+        {
+          "category": "system_utility",
+          "count": 6,
+          "percent": 6.1
+        },
+        {
+          "category": "ai_chat_or_writing",
+          "count": 6,
+          "percent": 6.1
+        },
+        {
+          "category": "messaging_social",
+          "count": 5,
+          "percent": 5.1
+        },
+        {
+          "category": "creative_pro_editor",
+          "count": 5,
+          "percent": 5.1
+        },
+        {
+          "category": "hardware_device",
+          "count": 4,
+          "percent": 4.1
+        },
+        {
+          "category": "music_audio_pro",
+          "count": 4,
+          "percent": 4.1
+        },
+        {
+          "category": "developer_tools",
+          "count": 3,
+          "percent": 3.1
+        },
+        {
+          "category": "notes_tasks_writing_app",
+          "count": 3,
+          "percent": 3.1
+        },
+        {
+          "category": "video_media_batch",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "remote_desktop_virtualization",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "pdf_document_tools",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "archive_tools",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "shopping_service",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "backup_sync_storage_service",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "password_identity_security",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "education_exam_service",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "window_workspace_management",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "storage_audit",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "file_manager_transfer",
+          "count": 1,
+          "percent": 1.0
+        }
+      ]
+    },
+    "paid_overall": {
+      "total": 100,
+      "replacement_buckets": {
+        "assistable_not_core_replaceable": {
+          "count": 38,
+          "percent": 38.0
+        },
+        "core_replaceable": {
+          "count": 41,
+          "percent": 41.0
+        },
+        "hard_app_or_service": {
+          "count": 21,
+          "percent": 21.0
+        }
+      },
+      "raw_replaceability": {
+        "no": {
+          "count": 21,
+          "percent": 21.0
+        },
+        "partial": {
+          "count": 74,
+          "percent": 74.0
+        },
+        "yes": {
+          "count": 5,
+          "percent": 5.0
+        }
+      },
+      "ai_agent_readiness": {
+        "api_or_connector_ready": {
+          "count": 8,
+          "percent": 8.0
+        },
+        "low": {
+          "count": 6,
+          "percent": 6.0
+        },
+        "native_agent_surface": {
+          "count": 3,
+          "percent": 3.0
+        },
+        "not_a_fit": {
+          "count": 14,
+          "percent": 14.0
+        },
+        "partial_file_automation": {
+          "count": 30,
+          "percent": 30.0
+        },
+        "scriptable_cli": {
+          "count": 30,
+          "percent": 30.0
+        },
+        "web_automation": {
+          "count": 9,
+          "percent": 9.0
+        }
+      },
+      "top_categories": [
+        {
+          "category": "music_audio_pro",
+          "count": 10,
+          "percent": 10.0
+        },
+        {
+          "category": "system_utility",
+          "count": 10,
+          "percent": 10.0
+        },
+        {
+          "category": "browser_extension_or_web_wrapper",
+          "count": 8,
+          "percent": 8.0
+        },
+        {
+          "category": "video_media_batch",
+          "count": 8,
+          "percent": 8.0
+        },
+        {
+          "category": "image_media_batch",
+          "count": 7,
+          "percent": 7.0
+        },
+        {
+          "category": "notes_tasks_writing_app",
+          "count": 6,
+          "percent": 6.0
+        },
+        {
+          "category": "creative_pro_editor",
+          "count": 5,
+          "percent": 5.0
+        },
+        {
+          "category": "window_workspace_management",
+          "count": 5,
+          "percent": 5.0
+        },
+        {
+          "category": "network_security",
+          "count": 4,
+          "percent": 4.0
+        },
+        {
+          "category": "pdf_document_tools",
+          "count": 4,
+          "percent": 4.0
+        },
+        {
+          "category": "storage_audit",
+          "count": 3,
+          "percent": 3.0
+        },
+        {
+          "category": "diagram_mindmap",
+          "count": 3,
+          "percent": 3.0
+        },
+        {
+          "category": "password_identity_security",
+          "count": 3,
+          "percent": 3.0
+        },
+        {
+          "category": "hardware_device",
+          "count": 3,
+          "percent": 3.0
+        },
+        {
+          "category": "streaming_content",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "archive_tools",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "remote_desktop_virtualization",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "backup_sync_storage_service",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "developer_tools",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "file_manager_transfer",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "genealogy_reference",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "office_documents",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "web_download_archive",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "screenshot_ocr_capture",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "messaging_social",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "education_exam_service",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "email_calendar_meetings",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "presentation_screen_tools",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "transcription_audio_notes",
+          "count": 1,
+          "percent": 1.0
+        }
+      ]
+    },
+    "paid_productivity": {
+      "total": 100,
+      "replacement_buckets": {
+        "assistable_not_core_replaceable": {
+          "count": 52,
+          "percent": 52.0
+        },
+        "core_replaceable": {
+          "count": 40,
+          "percent": 40.0
+        },
+        "hard_app_or_service": {
+          "count": 8,
+          "percent": 8.0
+        }
+      },
+      "raw_replaceability": {
+        "no": {
+          "count": 8,
+          "percent": 8.0
+        },
+        "partial": {
+          "count": 92,
+          "percent": 92.0
+        }
+      },
+      "ai_agent_readiness": {
+        "api_or_connector_ready": {
+          "count": 30,
+          "percent": 30.0
+        },
+        "low": {
+          "count": 5,
+          "percent": 5.0
+        },
+        "native_agent_surface": {
+          "count": 7,
+          "percent": 7.0
+        },
+        "not_a_fit": {
+          "count": 3,
+          "percent": 3.0
+        },
+        "partial_file_automation": {
+          "count": 24,
+          "percent": 24.0
+        },
+        "scriptable_cli": {
+          "count": 20,
+          "percent": 20.0
+        },
+        "web_automation": {
+          "count": 11,
+          "percent": 11.0
+        }
+      },
+      "top_categories": [
+        {
+          "category": "notes_tasks_writing_app",
+          "count": 23,
+          "percent": 23.0
+        },
+        {
+          "category": "browser_extension_or_web_wrapper",
+          "count": 10,
+          "percent": 10.0
+        },
+        {
+          "category": "timer_focus_utility",
+          "count": 9,
+          "percent": 9.0
+        },
+        {
+          "category": "pdf_document_tools",
+          "count": 8,
+          "percent": 8.0
+        },
+        {
+          "category": "system_utility",
+          "count": 8,
+          "percent": 8.0
+        },
+        {
+          "category": "window_workspace_management",
+          "count": 5,
+          "percent": 5.0
+        },
+        {
+          "category": "email_calendar_meetings",
+          "count": 5,
+          "percent": 5.0
+        },
+        {
+          "category": "transcription_audio_notes",
+          "count": 5,
+          "percent": 5.0
+        },
+        {
+          "category": "diagram_mindmap",
+          "count": 4,
+          "percent": 4.0
+        },
+        {
+          "category": "file_manager_transfer",
+          "count": 4,
+          "percent": 4.0
+        },
+        {
+          "category": "screenshot_ocr_capture",
+          "count": 3,
+          "percent": 3.0
+        },
+        {
+          "category": "presentation_screen_tools",
+          "count": 3,
+          "percent": 3.0
+        },
+        {
+          "category": "password_identity_security",
+          "count": 3,
+          "percent": 3.0
+        },
+        {
+          "category": "video_media_batch",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "clipboard_automation",
+          "count": 2,
+          "percent": 2.0
+        },
+        {
+          "category": "genealogy_reference",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "office_documents",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "backup_sync_storage_service",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "web_download_archive",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "data_visualization_or_analysis",
+          "count": 1,
+          "percent": 1.0
+        },
+        {
+          "category": "ai_chat_or_writing",
+          "count": 1,
+          "percent": 1.0
+        }
+      ]
+    }
+  },
+  "category_rollup": [
+    {
+      "category": "ai_chat_or_writing",
+      "replacement_bucket": "core_replaceable",
+      "note": "General chat/writing overlaps directly with Codex/Claude workflows.",
+      "free_overall": {
+        "count": 6,
+        "percent": 6.1,
+        "apps": [
+          "#26 Microsoft Copilot (Get)",
+          "#27 AI ChatbotㆍAsk AI Anything 5.4 (Get)",
+          "#42 Grammarly: AI Writing App (Get)",
+          "#45 C.AI: AI Chatbot Assistant (Get)",
+          "#50 AI Chatbot - Ask AI Anything‎ (Get)",
+          "#55 Chatbot: Ask Chat AI Assistant (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_productivity": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#74 Collective AI (£2.99)"
+        ]
+      }
+    },
+    {
+      "category": "archive_tools",
+      "replacement_bucket": "core_replaceable",
+      "note": "Core job is list/test/extract; this repo already covers common archive workflows.",
+      "free_overall": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#33 The Unarchiver (Get)",
+          "#46 Unzip - RAR ZIP 7Z Unarchiver (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#6 RAR Extractor - Unarchiver Pro (£3.99)",
+          "#20 Keka (£5.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "backup_sync_storage_service",
+      "replacement_bucket": "core_replaceable",
+      "note": "Verification/reporting is replaceable; sync engines are not.",
+      "free_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#22 OneDrive (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#24 Parachute Backup (£14.99)",
+          "#47 Offline Files (£8.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#15 Offline Files (£8.99)"
+        ]
+      }
+    },
+    {
+      "category": "browser_extension_or_web_wrapper",
+      "replacement_bucket": "core_replaceable",
+      "note": "Many rows are thin wrappers around websites or browser rules; agents/browser automation can replace much of the workflow.",
+      "free_overall": {
+        "count": 12,
+        "percent": 12.2,
+        "apps": [
+          "#10 Save to Pinterest (Get)",
+          "#16 Apps for Google App (Get)",
+          "#24 DuckDuckGo, optional Duck.ai (Get)",
+          "#28 App for Youtube! (Get)",
+          "#31 Open Link Pro - Browser Picker (Get)",
+          "#49 uBlock Origin Lite (Get)",
+          "#66 App for YouTube ℠ (Get)",
+          "#77 App for Google Search ®‎ (Get)",
+          "#85 App for YouTube • (Get)",
+          "#86 Openly a Link - Browser Picker (Get)",
+          "#90 Open App for All Browser (Get)",
+          "#97 Notion Web Clipper (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 8,
+        "percent": 8.0,
+        "apps": [
+          "#5 Wipr 2 (£4.99)",
+          "#26 SponsorBlock for Safari (£2.99)",
+          "#28 Vinegar - Tube Cleaner (£1.99)",
+          "#53 Dark Night - mode for Safari (£0.99)",
+          "#71 Noir - Dark Mode for Safari (£3.99)",
+          "#72 Dark Reader for Safari (£4.99)",
+          "#77 Tampermonkey (£2.99)",
+          "#78 Velja (£8.00)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 10,
+        "percent": 10.0,
+        "apps": [
+          "#7 SponsorBlock for Safari (£2.99)",
+          "#19 Dark Reader for Safari (£4.99)",
+          "#21 Tampermonkey (£2.99)",
+          "#27 Tampermonkey Classic (£1.99)",
+          "#28 xSearch for Safari (£2.99)",
+          "#36 MailTrackerBlocker for Mail (£6.99)",
+          "#47 UnTrap for YouTube (£3.99)",
+          "#55 AI Overview Hider for Google (£0.99)",
+          "#75 TabPilot (£3.99)",
+          "#99 Ad Auto-Skipper for YouTube (£0.99)"
+        ]
+      }
+    },
+    {
+      "category": "clipboard_automation",
+      "replacement_bucket": "core_replaceable",
+      "note": "Batch transforms are agent-friendly; clipboard history needs a resident utility.",
+      "free_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_productivity": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#30 Maccy (£9.99)",
+          "#66 CopyClip 2 - Clipboard Manager (£7.99)"
+        ]
+      }
+    },
+    {
+      "category": "creative_pro_editor",
+      "replacement_bucket": "assistable_not_core_replaceable",
+      "note": "Agents can automate prep/export/metadata; the live canvas/timeline remains the product.",
+      "free_overall": {
+        "count": 5,
+        "percent": 5.1,
+        "apps": [
+          "#7 Canva: AI Video & Photo Editor (Get)",
+          "#30 Adobe Lightroom: Photo Editor (Get)",
+          "#41 DaVinci Resolve (Get)",
+          "#44 Final Cut Pro: Create Video (Get)",
+          "#88 Pixelmator Pro: Edit Images (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 5,
+        "percent": 5.0,
+        "apps": [
+          "#12 Pixelmator Pro (£49.99)",
+          "#13 Final Cut Pro (£299.99)",
+          "#29 Logoist 6 - Graphic Design (£19.99)",
+          "#84 Sketchbook Pro (£24.99)",
+          "#93 Motion (£49.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "data_visualization_or_analysis",
+      "replacement_bucket": "core_replaceable",
+      "note": "One-off analysis and generated charts are agent-friendly.",
+      "free_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_productivity": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#43 Histogrammer (£4.99)"
+        ]
+      }
+    },
+    {
+      "category": "developer_tools",
+      "replacement_bucket": "core_replaceable",
+      "note": "Codebase work is highly agent-ready; IDEs, simulators, and distribution remain specialized.",
+      "free_overall": {
+        "count": 3,
+        "percent": 3.1,
+        "apps": [
+          "#17 Xcode (Get)",
+          "#38 TestFlight (Get)",
+          "#43 Apple Developer (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#63 Icon Composer (£0.99)",
+          "#86 Node.js/JavaScript Compiler (£0.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "diagram_mindmap",
+      "replacement_bucket": "assistable_not_core_replaceable",
+      "note": "Agents can generate diagrams; manual canvas editing remains app value.",
+      "free_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_overall": {
+        "count": 3,
+        "percent": 3.0,
+        "apps": [
+          "#37 SimpleMind Pro (£29.99)",
+          "#58 TouchDraw 2: Draw and Diagram (£24.99)",
+          "#96 RailModeller Pro (£44.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 4,
+        "percent": 4.0,
+        "apps": [
+          "#12 SimpleMind Pro (£29.99)",
+          "#84 Scapple (£19.99)",
+          "#96 iCircuit (£12.99)",
+          "#98 Project Planner - Gantt app (£9.99)"
+        ]
+      }
+    },
+    {
+      "category": "education_exam_service",
+      "replacement_bucket": "hard_app_or_service",
+      "note": "Exam delivery and identity requirements are not local replacement targets.",
+      "free_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#63 Bluebook Exams (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#59 Focus & ADHD Reading - Glide (£6.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "email_calendar_meetings",
+      "replacement_bucket": "core_replaceable",
+      "note": "Connectors and APIs make triage/drafting/summaries agent-friendly; real-time chat/meeting clients remain.",
+      "free_overall": {
+        "count": 12,
+        "percent": 12.2,
+        "apps": [
+          "#4 Microsoft Outlook (Get)",
+          "#12 Slack for Desktop (Get)",
+          "#15 Join for Zoom Meetings (Get)",
+          "#21 Mail for Gmail (Get)",
+          "#36 Join for Teams (Get)",
+          "#47 Mail+ for Gmail (Get)",
+          "#53 Calendar for Google Calendar‎ (Get)",
+          "#59 Join for Zoom (Get)",
+          "#81 App for Zoom Meetings ° (Get)",
+          "#89 App For Team Meetings (Get)",
+          "#91 App for Gmail ® (Get)",
+          "#92 Meeting for Teams ® (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#69 Webmail App (£2.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 5,
+        "percent": 5.0,
+        "apps": [
+          "#18 Webmail App (£2.99)",
+          "#62 PST Viewer - Email Reader (£7.99)",
+          "#67 GCal for Google Calendar (£4.99)",
+          "#86 Unibox (£12.99)",
+          "#90 MailRaider (£3.99)"
+        ]
+      }
+    },
+    {
+      "category": "file_manager_transfer",
+      "replacement_bucket": "assistable_not_core_replaceable",
+      "note": "Reports and batch copies can be scripted; device/cloud transfer clients may still be needed.",
+      "free_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#98 MacDroid - Manager for Android (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#89 LinkMyDroid (£14.99)",
+          "#98 Folder Tidy (£4.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 4,
+        "percent": 4.0,
+        "apps": [
+          "#48 FileBrowser Pro (£14.99)",
+          "#56 FolderToList (£0.99)",
+          "#77 Cyberduck (£22.99)",
+          "#87 Instashare - Transfer files (£4.99)"
+        ]
+      }
+    },
+    {
+      "category": "genealogy_reference",
+      "replacement_bucket": "assistable_not_core_replaceable",
+      "note": "Report/export workflows can be agentic; domain database UI remains app-specific.",
+      "free_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#23 MacFamilyTree 11 (£69.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#5 MacFamilyTree 11 (£69.99)"
+        ]
+      }
+    },
+    {
+      "category": "hardware_device",
+      "replacement_bucket": "hard_app_or_service",
+      "note": "Drivers and hardware control need native integrations.",
+      "free_overall": {
+        "count": 4,
+        "percent": 4.1,
+        "apps": [
+          "#11 HP: Print and Support (Get)",
+          "#54 Brother iPrint&Scan (Get)",
+          "#70 Apple Configurator (Get)",
+          "#94 HP Smart Printer App & Scanner (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 3,
+        "percent": 3.0,
+        "apps": [
+          "#79 Shutter Counter (£0.99)",
+          "#80 ShutterCount (£8.99)",
+          "#100 Webcam Settings (£7.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "image_media_batch",
+      "replacement_bucket": "core_replaceable",
+      "note": "Batch conversion, metadata, duplicate scans, and contact sheets are agent-friendly.",
+      "free_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_overall": {
+        "count": 7,
+        "percent": 7.0,
+        "apps": [
+          "#22 PhotoSweeper (£14.99)",
+          "#27 Iris: Photo & Video Library (£14.00)",
+          "#33 Upscayl (£12.99)",
+          "#38 PixelStyle Photo Editor (£5.99)",
+          "#41 Starry Landscape Stacker (£39.99)",
+          "#81 Phiewer PRO (£7.99)",
+          "#91 GraphicConverter 12 (£39.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "messaging_social",
+      "replacement_bucket": "hard_app_or_service",
+      "note": "Network effects, accounts, push notifications, and encrypted UX are the product.",
+      "free_overall": {
+        "count": 5,
+        "percent": 5.1,
+        "apps": [
+          "#1 WhatsApp Messenger (Get)",
+          "#13 Telegram (Get)",
+          "#34 WeChat (Get)",
+          "#75 App for Facebook Messenger (Get)",
+          "#76 App for TikTok (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#57 ChatShare for WhatsApp (£3.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "music_audio_pro",
+      "replacement_bucket": "assistable_not_core_replaceable",
+      "note": "Metadata/filing/conversion can be automated; instruments, notation, and DAW work remain apps.",
+      "free_overall": {
+        "count": 4,
+        "percent": 4.1,
+        "apps": [
+          "#48 Silicio: Widgets + Mini Player (Get)",
+          "#61 Logic Pro: Make Music (Get)",
+          "#65 VinylPod - Music Widget (Get)",
+          "#84 djay - DJ App & AI Mixer (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 10,
+        "percent": 10.0,
+        "apps": [
+          "#2 Logic Pro (£199.99)",
+          "#14 Mp3tag (£24.99)",
+          "#15 forScore (£24.99)",
+          "#18 Minimoog Model D Synthesizer (£14.99)",
+          "#40 MainStage (£29.99)",
+          "#49 Tune Sweeper (£22.99)",
+          "#61 Patterning 3: Drum Machine (£29.99)",
+          "#82 Meta - Music Tag Editor (£22.99)",
+          "#85 miRack (£14.99)",
+          "#90 iReal Pro (£19.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "network_security",
+      "replacement_bucket": "hard_app_or_service",
+      "note": "VPN/proxy/MFA clients are trust and OS-integration problems, not skill replacements.",
+      "free_overall": {
+        "count": 10,
+        "percent": 10.2,
+        "apps": [
+          "#20 NordVPN: VPN Fast & Secure (Get)",
+          "#37 VPN: Super Unlimited, Fast VPN (Get)",
+          "#57 ExpressVPN · Secure & Fast VPN (Get)",
+          "#62 Happ - Proxy Utility (Get)",
+          "#64 Free VPN by Free VPN .org™ (Get)",
+          "#69 VPN cat: Fast Secure Unlimited (Get)",
+          "#71 VPN Proxy Maste® Unlimited VPN (Get)",
+          "#73 Tailscale (Get)",
+          "#74 Surfshark VPN: stable & fast (Get)",
+          "#83 WireGuard (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 4,
+        "percent": 4.0,
+        "apps": [
+          "#1 Shadowrocket (£2.99)",
+          "#39 Dynamic DNS client - RealDNS (£4.99)",
+          "#42 Quantumult X (£9.99)",
+          "#43 IP Scanner Ultra (£49.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "notes_tasks_writing_app",
+      "replacement_bucket": "assistable_not_core_replaceable",
+      "note": "Agents can draft/migrate/summarize; persistent task/note UI remains useful.",
+      "free_overall": {
+        "count": 3,
+        "percent": 3.1,
+        "apps": [
+          "#39 Goodnotes: AI Notes, Docs, PDF (Get)",
+          "#52 Microsoft OneNote (Get)",
+          "#78 Notability: AI Notes & PDF app (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 6,
+        "percent": 6.0,
+        "apps": [
+          "#8 Things 3 (Open/Purchased)",
+          "#35 Scrivener 3 (£59.99)",
+          "#60 md - Markdown writing App (£0.99)",
+          "#66 MenuBarPad (£1.99)",
+          "#76 iA Writer (£49.99)",
+          "#95 Final Draft 13 (£199.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 23,
+        "percent": 23.0,
+        "apps": [
+          "#1 Things 3 (Open/Purchased)",
+          "#10 Scrivener 3 (£59.99)",
+          "#17 md - Markdown writing App (£0.99)",
+          "#20 iA Writer (£49.99)",
+          "#22 Final Draft 13 (£199.99)",
+          "#29 nvEnvy (£1.99)",
+          "#32 ReminderBridge (£7.99)",
+          "#33 Unclutter (£19.99)",
+          "#34 TaskControl for Asana (£7.99)",
+          "#38 Narrativ Timeline (£9.99)",
+          "#51 Quiver - take better notes (£9.99)",
+          "#52 GoodTask (£39.99)",
+          "#54 Scrap Paper (£1.99)",
+          "#58 SideNotes & Workspaces (View)",
+          "#59 PreviewMarkdown (£2.99)",
+          "#61 PlainPad (£1.99)",
+          "#63 iWriter 2 (£14.99)",
+          "#68 Scratchpad (£10.00)",
+          "#76 Outliner (£4.99)",
+          "#81 Byword (£9.99)",
+          "#82 OmmWriter (£9.99)",
+          "#91 To-do Lists (£4.99)",
+          "#95 WriteRoom (£4.99)"
+        ]
+      }
+    },
+    {
+      "category": "office_documents",
+      "replacement_bucket": "core_replaceable",
+      "note": "Agents can generate, review, convert, and clean files; Microsoft/Google UIs still matter for collaboration.",
+      "free_overall": {
+        "count": 6,
+        "percent": 6.1,
+        "apps": [
+          "#3 Microsoft Word (Get)",
+          "#5 Microsoft Excel (Get)",
+          "#8 Microsoft PowerPoint (Get)",
+          "#35 Docs for Google Docs and Drive (Get)",
+          "#51 WPS Office: AI Doc, PDF, Sheet (Get)",
+          "#82 Spreadsheet-xlsx&csv editor (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#31 LibreOffice (£8.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#8 LibreOffice (£8.99)"
+        ]
+      }
+    },
+    {
+      "category": "password_identity_security",
+      "replacement_bucket": "hard_app_or_service",
+      "note": "Secrets/autofill/MFA have a stricter trust model than coding-agent tools.",
+      "free_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#29 Okta Verify (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 3,
+        "percent": 3.0,
+        "apps": [
+          "#48 pwSafe - Password Safe (£14.99)",
+          "#87 App Trust Preview (£4.99)",
+          "#88 Paranoia File Encryption PRO (£3.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 3,
+        "percent": 3.0,
+        "apps": [
+          "#50 Password Manager Data Vault (£9.99)",
+          "#73 Lock Pro (£5.99)",
+          "#85 eWallet (£19.99)"
+        ]
+      }
+    },
+    {
+      "category": "pdf_document_tools",
+      "replacement_bucket": "core_replaceable",
+      "note": "Batch PDF inspection/split/merge/OCR are agent-friendly; polished signing/layout editing remains app-heavy.",
+      "free_overall": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#25 PDFgear: PDF Editor & Reader (Get)",
+          "#56 PDF Reader: PDF Editor,Convert (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 4,
+        "percent": 4.0,
+        "apps": [
+          "#11 PDF Expert - Edit, Sign PDFs (£129.99)",
+          "#51 PDF Reader Pro - Edit&Convert (£79.99)",
+          "#67 Basic PDF Reader (£1.99)",
+          "#83 Create Booklet 2 (£19.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 8,
+        "percent": 8.0,
+        "apps": [
+          "#2 PDF Expert - Edit, Sign PDFs (£129.99)",
+          "#16 PDF Reader Pro - Edit&Convert (£79.99)",
+          "#41 Redacto (£4.99)",
+          "#53 PDF Professional Suite (£29.99)",
+          "#64 PDF Merge & Split - PageForge (£6.99)",
+          "#83 PDFScanner - Scanning and OCR (£24.99)",
+          "#88 PDF Toolkit + (£1.99)",
+          "#89 PDF to Word + (£6.99)"
+        ]
+      }
+    },
+    {
+      "category": "presentation_screen_tools",
+      "replacement_bucket": "assistable_not_core_replaceable",
+      "note": "Deck generation is agent-friendly; live overlays/remotes need apps.",
+      "free_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#70 Inset: Preview Any Screen Area (£3.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 3,
+        "percent": 3.0,
+        "apps": [
+          "#39 iA Presenter (£64.00)",
+          "#46 Clicker - Presentation Remote (£4.99)",
+          "#49 Presentify - Screen Annotation (£14.99)"
+        ]
+      }
+    },
+    {
+      "category": "remote_desktop_virtualization",
+      "replacement_bucket": "hard_app_or_service",
+      "note": "VM and remote desktop clients need live native OS/network integration.",
+      "free_overall": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#19 Windows App (Get)",
+          "#96 Parallels Desktop (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#9 UTM Virtual Machines (£9.99)",
+          "#74 Jump Desktop (RDP, VNC, Fluid) (£34.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "screenshot_ocr_capture",
+      "replacement_bucket": "core_replaceable",
+      "note": "Post-capture organization/OCR/reporting is agent-friendly; hotkey capture is resident-app territory.",
+      "free_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#36 TextSniper (£9.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 3,
+        "percent": 3.0,
+        "apps": [
+          "#11 TextSniper (£9.99)",
+          "#31 Greenshot (£1.99)",
+          "#69 Cursor Pro (£17.99)"
+        ]
+      }
+    },
+    {
+      "category": "shopping_service",
+      "replacement_bucket": "hard_app_or_service",
+      "note": "Retail/account extensions are service-bound.",
+      "free_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#18 Capital One Shopping Extension (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "storage_audit",
+      "replacement_bucket": "core_replaceable",
+      "note": "Core job is transparent local disk inspection; this repo already covers it.",
+      "free_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#72 CleanMyMac (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 3,
+        "percent": 3.0,
+        "apps": [
+          "#4 DaisyDisk (£9.99)",
+          "#21 GrandPerspective (£2.99)",
+          "#92 Disk Drill Data Recovery (£89.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "streaming_content",
+      "replacement_bucket": "hard_app_or_service",
+      "note": "Licensed content and playback UX are service-bound.",
+      "free_overall": {
+        "count": 7,
+        "percent": 7.1,
+        "apps": [
+          "#2 Amazon Prime Video (Get)",
+          "#14 Amazon Kindle: Reading App (Get)",
+          "#40 Streaming for Netflix (Get)",
+          "#58 Streaming Player for Peacock (Get)",
+          "#67 Teleparty - Watch TV Together (Get)",
+          "#79 Friendly Streaming Browser (Get)",
+          "#93 Streaming Master (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#3 TV Launcher - Live UK Channels (£5.99)",
+          "#10 IPTV Smart Pro - 4K Live TV (£4.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      }
+    },
+    {
+      "category": "system_utility",
+      "replacement_bucket": "assistable_not_core_replaceable",
+      "note": "Agents can inspect or generate config, but resident menu-bar/input behavior usually remains app territory.",
+      "free_overall": {
+        "count": 6,
+        "percent": 6.1,
+        "apps": [
+          "#9 WidgetWall (Get)",
+          "#23 Color Widgets (Get)",
+          "#32 Widgetter - Custom Desktop (Get)",
+          "#60 Amphetamine (Get)",
+          "#80 iWallpaper - Live Wallpaper (Get)",
+          "#95 OP Auto Clicker (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 10,
+        "percent": 10.0,
+        "apps": [
+          "#17 Parall (£9.99)",
+          "#19 DeskMat - Cover your Desktop (£3.99)",
+          "#44 Short Run (£6.00)",
+          "#50 Command X (£4.00)",
+          "#55 Screen Shade (£1.99)",
+          "#56 Color Folder Master (£1.99)",
+          "#62 Mouse Coordinates (£0.99)",
+          "#73 Paperman: Your screen as paper (£5.99)",
+          "#75 Klack (£4.99)",
+          "#94 iStat Menus 7 (£11.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 8,
+        "percent": 8.0,
+        "apps": [
+          "#4 Parall (£9.99)",
+          "#13 Short Run (£6.00)",
+          "#25 HazeOver - Distraction Dimmer (£4.99)",
+          "#26 NotchPrompter (£4.99)",
+          "#37 Hide Mouse Cursor (£0.99)",
+          "#40 Glance - Prevent Eye Strain (£0.99)",
+          "#44 Quit All Apps (£1.99)",
+          "#70 Theine (£3.99)"
+        ]
+      }
+    },
+    {
+      "category": "timer_focus_utility",
+      "replacement_bucket": "assistable_not_core_replaceable",
+      "note": "Simple timers and reports can be scripted; always-on reminders remain resident utilities.",
+      "free_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_productivity": {
+        "count": 9,
+        "percent": 9.0,
+        "apps": [
+          "#42 Count Down: Menu Bar Timer (£2.99)",
+          "#57 Day Progress (£4.00)",
+          "#60 Show StopWatch (£3.99)",
+          "#71 Timeless: Alarm Clock (£4.99)",
+          "#72 Gestimer 2 (£6.99)",
+          "#80 Be Focused Pro: Pomodoro Timer (£14.99)",
+          "#92 Gestimer (Legacy) (£6.99)",
+          "#93 The Clock (£4.99)",
+          "#97 Due - Reminders & Timers (£14.99)"
+        ]
+      }
+    },
+    {
+      "category": "transcription_audio_notes",
+      "replacement_bucket": "core_replaceable",
+      "note": "Transcription and summarization are agent-friendly; capture/permissions remain app-specific.",
+      "free_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#99 Whisper Notes - Speech to Text (£6.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 5,
+        "percent": 5.0,
+        "apps": [
+          "#24 Whisper Notes - Speech to Text (£6.99)",
+          "#45 Trace: On-Device Transcripts (£9.99)",
+          "#78 Aiko (£25.00)",
+          "#79 AudioNote-Note+Voice Recorder (£14.99)",
+          "#94 eXtra Voice Recorder Pro. (£4.99)"
+        ]
+      }
+    },
+    {
+      "category": "video_media_batch",
+      "replacement_bucket": "core_replaceable",
+      "note": "ffmpeg-style transcode/trim/metadata/caption workflows are agent-friendly.",
+      "free_overall": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#6 CapCut: Photo & Video Editor (Get)",
+          "#87 MKPlayer - MKV & Media Player (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 8,
+        "percent": 8.0,
+        "apps": [
+          "#7 MediaInfo (£0.99)",
+          "#32 LosslessCut (£19.99)",
+          "#45 BRAW Toolbox (£79.99)",
+          "#46 Msg Converter Pro (£5.99)",
+          "#52 Smart Converter Pro 3 (£14.99)",
+          "#54 Gyroflow Toolbox (£9.99)",
+          "#65 captionTranslator (£34.99)",
+          "#68 3D Video Meta Data injector (£4.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 2,
+        "percent": 2.0,
+        "apps": [
+          "#9 LosslessCut (£19.99)",
+          "#14 Msg Converter Pro (£5.99)"
+        ]
+      }
+    },
+    {
+      "category": "web_download_archive",
+      "replacement_bucket": "core_replaceable",
+      "note": "Automated web export/download flows are agent-friendly but session-dependent.",
+      "free_overall": {
+        "count": 0,
+        "percent": 0.0,
+        "apps": []
+      },
+      "paid_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#34 SiteSucker (£5.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#35 MarkDownload (£2.99)"
+        ]
+      }
+    },
+    {
+      "category": "window_workspace_management",
+      "replacement_bucket": "hard_app_or_service",
+      "note": "Real-time window control needs resident accessibility/input integrations.",
+      "free_overall": {
+        "count": 1,
+        "percent": 1.0,
+        "apps": [
+          "#68 NotchBox - Easier Drag & Drop (Get)"
+        ]
+      },
+      "paid_overall": {
+        "count": 5,
+        "percent": 5.0,
+        "apps": [
+          "#16 BetterSnapTool (£1.99)",
+          "#25 Magnet (Open)",
+          "#30 Moom Classic (£6.99)",
+          "#64 AirSpace: Manage Desktop Spaces (£9.99)",
+          "#97 AltTab Switcher (£2.99)"
+        ]
+      },
+      "paid_productivity": {
+        "count": 5,
+        "percent": 5.0,
+        "apps": [
+          "#3 BetterSnapTool (£1.99)",
+          "#6 Magnet (Open)",
+          "#23 AltTab Switcher (£2.99)",
+          "#65 CCCCorners (£2.99)",
+          "#100 Split Screen (£2.99)"
+        ]
+      }
+    }
+  ]
+}

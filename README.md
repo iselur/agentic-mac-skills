@@ -104,7 +104,14 @@ Poor skill candidates:
 - device drivers
 - medical or safety-critical apps
 
-See [research/app-replacement-map.md](research/app-replacement-map.md) for the chart-based analysis.
+See the research notes for the chart-based analysis:
+
+- [research/top-100-category-mapping.md](research/top-100-category-mapping.md) - full row-level mapping of the captured free and paid top charts.
+- [research/top-chart-summary.md](research/top-chart-summary.md) - category rollups and replacement percentages.
+- [research/ai-agent-readiness.md](research/ai-agent-readiness.md) - official MCP/API/CLI/readiness evidence.
+- [research/community-alternatives.md](research/community-alternatives.md) - public CLIs, libraries, OSS apps, and MCP/community alternatives.
+- [research/skill-selection-rationale.md](research/skill-selection-rationale.md) - why these 13 skills were chosen and what they do not replace.
+- [research/market-traffic-install-evidence.md](research/market-traffic-install-evidence.md) - what public traffic/install data can and cannot prove.
 
 ## Safety Model
 
