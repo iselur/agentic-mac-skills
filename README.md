@@ -6,6 +6,8 @@ The first principle: do not build another cleaner app. Let an agent run small re
 
 ## Included Skills
 
+Current set: 10 reusable skills.
+
 | Skill | Replaces the need for | What it does |
 |---|---|---|
 | `macos-system-data-audit` | CleanMyMac/CCleaner-style storage mystery scans | Explains macOS System Data, APFS/du gaps, Photos, screen recordings, wallpaper/aerial assets, old ISOs, and VM residues. |
@@ -81,7 +83,6 @@ Good skill candidates:
 - archive listing/testing/extraction
 - transcript cleanup and summarization
 - meeting note extraction from local recordings/transcripts
-- CSV/spreadsheet cleanup
 - screenshot/report generation
 - project scaffolding
 - backup verification reports
