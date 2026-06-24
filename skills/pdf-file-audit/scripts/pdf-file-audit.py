@@ -200,7 +200,7 @@ def main() -> int:
         except OSError as exc:
             errors.append(f"{path}: {exc}")
 
-    stamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    stamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S-%f")
     report_dir = Path(tempfile.gettempdir()) / f"pdf-file-audit-{stamp}"
     report_dir.mkdir(parents=True, exist_ok=True)
     write_report(args, records, errors, report_dir)

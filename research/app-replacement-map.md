@@ -90,6 +90,7 @@ These are the best repo expansion targets because the agent can inspect files, r
 | Archive utilities | The Unarchiver, Unzip | `archive-batch-tools` | Created |
 | PDF utilities | PDFgear, PDF Expert-style audit/organizer tasks | `pdf-file-audit` | Created for audit workflows; full editing remains an app workflow |
 | macOS preference inspectors | defaults/plist settings utilities | `plist-defaults-audit` | Created |
+| Screenshot organizers | desktop cleanup and screenshot filing utilities | `screenshot-organizer` | Created |
 | Office document utilities | Word/PowerPoint/Excel helper workflows | document/spreadsheet/presentation skills | Candidate, often already exists in many agent setups |
 | Meeting assistants | Zoom helper apps, note takers | meeting transcript/audio-to-summary skill | Candidate |
 | Browser/Gmail wrapper apps | Mail for Gmail, web app shells | connector-backed triage/drafting skills | Candidate |
@@ -115,5 +116,5 @@ These should stay as real apps/services unless the user only wants a narrow repo
 1. `video-batch-utility`: use `ffmpeg` for compressing, extracting audio, clipping, and subtitle extraction.
 2. `calendar-meeting-audit`: inspect calendar/recording/transcript files and produce meeting summaries.
 3. `contact-sheet-builder`: create contact sheets for image folders.
-4. `screenshot-organizer`: group screenshots/recordings by date, app, and project clues.
-5. `browser-shell-audit`: identify web-wrapper apps that could become browser/app-mode shortcuts.
+4. `browser-shell-audit`: identify web-wrapper apps that could become browser/app-mode shortcuts.
+5. `pdf-batch-editing`: optional dependency skill for merge/split/compress when `pypdf` or equivalent tooling is available.

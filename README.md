@@ -6,7 +6,7 @@ The first principle: do not build another cleaner app. Let an agent run small re
 
 ## Included Skills
 
-Current set: 12 reusable skills.
+Current set: 13 reusable skills.
 
 | Skill | Replaces the need for | What it does |
 |---|---|---|
@@ -22,6 +22,7 @@ Current set: 12 reusable skills.
 | `archive-batch-tools` | Simple unzip/archive apps | Lists, tests, and extracts ZIP/tar archives into safe output folders. |
 | `pdf-file-audit` | Narrow PDF organizer/audit utilities | Reports large PDFs, page-count metadata, duplicate-looking names, and optional exact hashes. |
 | `plist-defaults-audit` | macOS preference/settings inspection utilities | Audits plist/defaults files by size, domain, readability, and top-level keys without writing changes. |
+| `screenshot-organizer` | Screenshot cleanup/desktop organizer utilities | Audits screenshots and screen recordings, then optionally copies matches into dated folders. |
 
 All scripts are read-only by default. They print report paths under the system temp directory and never delete files.
 
@@ -84,6 +85,7 @@ Good skill candidates:
 - CSV cleanup and normalization
 - archive listing/testing/extraction
 - macOS plist/defaults inspection
+- screenshot and screen-recording organization
 - transcript cleanup and summarization
 - meeting note extraction from local recordings/transcripts
 - screenshot/report generation

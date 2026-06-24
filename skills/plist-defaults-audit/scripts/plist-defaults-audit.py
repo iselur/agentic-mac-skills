@@ -193,7 +193,7 @@ def main() -> int:
     if needle:
         domains = [domain for domain in domains if needle in domain.lower()]
 
-    stamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    stamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S-%f")
     report_dir = Path(tempfile.gettempdir()) / f"plist-defaults-audit-{stamp}"
     report_dir.mkdir(parents=True, exist_ok=True)
     write_report(args, records, invalid, errors, domains, domains_checked, report_dir)

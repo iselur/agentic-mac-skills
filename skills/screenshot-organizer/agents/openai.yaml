@@ -1,0 +1,4 @@
+interface:
+  display_name: "Screenshot Organizer"
+  short_description: "Audit and copy screenshots into dated folders"
+  default_prompt: "Use $screenshot-organizer to audit screenshots and screen recordings, then optionally copy them into dated folders without moving originals."
