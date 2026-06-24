@@ -1,0 +1,4 @@
+interface:
+  display_name: "CSV Clean Room"
+  short_description: "Profile and normalize CSV files safely"
+  default_prompt: "Use $csv-clean-room to profile a CSV and create a clean normalized copy without changing the original."

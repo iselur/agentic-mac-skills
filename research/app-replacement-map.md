@@ -46,6 +46,31 @@ The legacy `toppaidmacapps` endpoint returned a valid feed with zero entries at 
 | 23 | Color Widgets | Utilities | Maybe | Static widget/assets can be generated; live widget app remains. |
 | 24 | Microsoft Copilot | Productivity | Partial | General AI chat overlaps with Codex/Claude; Microsoft account/product integration may not. |
 | 25 | PDFgear | Business | Yes/Partial | Many PDF operations are deterministic skill workflows; visual PDF editing/signing may still need an app. |
+| 26 | AI Chatbot | Education | Partial | General chat overlaps; account/app-specific features do not. |
+| 27 | Join for Teams | Productivity | Partial | Meeting-note workflows can be skills; the Teams client is not replaced. |
+| 28 | Open Link Pro | Business | Partial | Rule-based link routing can be scripted; UI/menu behavior is app-specific. |
+| 29 | DuckDuckGo | Utilities | No/Partial | Browser/search/privacy service; some research workflows can be agentic. |
+| 30 | Okta Verify | Business | No | Identity/MFA security app. |
+| 31 | Adobe Lightroom | Photo & Video | Partial | Batch conversion/metadata workflows can be skills; professional editor remains. |
+| 32 | App for Youtube! | Utilities | No | Streaming wrapper/service. |
+| 33 | Docs for Google Docs and Drive | Productivity | Partial | Connector skills can replace wrapper-app workflows. |
+| 34 | Widgetter | Utilities | Maybe | Static widgets/assets can be generated; live widget host remains. |
+| 35 | C.AI | Productivity | Partial | General chat overlaps; service/community features do not. |
+| 36 | VPN: Super Unlimited | Utilities | No | VPN/network security client. |
+| 37 | The Unarchiver | Utilities | Yes/Partial | Archive listing/extraction can be a skill; Finder integration remains useful. |
+| 38 | WeChat | Social Networking | No | Messaging/payment/social network. |
+| 39 | TestFlight | Developer Tools | No | Apple beta distribution service. |
+| 40 | Goodnotes | Productivity | Partial | PDF/note extraction and summaries can be skills; handwriting/canvas UX remains. |
+| 41 | Brother iPrint&Scan | Utilities | No | Printer/scanner hardware integration. |
+| 42 | Grammarly | Productivity | Partial | Writing critique/editing can be agentic; keyboard/editor integrations remain. |
+| 43 | Streaming for Netflix | Entertainment | No | Streaming wrapper/service. |
+| 44 | Unzip | Utilities | Yes/Partial | Archive extraction/listing can be a skill; password archives/UI integrations may need an app. |
+| 45 | Apple Developer | Developer Tools | No/Partial | Portal/account service; build/report helpers can be skills. |
+| 46 | Microsoft OneNote | Productivity | Partial | Note extraction/summarization can be skills; sync/canvas remains. |
+| 47 | Mail+ for Gmail | Productivity | Partial | Gmail connector skills can replace many wrapper-app workflows. |
+| 48 | DaVinci Resolve | Photo & Video | Partial | Batch media utilities can be skills; pro editor is not replaced. |
+| 49 | Join for Zoom | Productivity | Partial | Meeting summaries and scheduling helpers can be skills; Zoom client remains. |
+| 50 | Final Cut Pro | Photo & Video | Partial | Batch media utilities can be skills; pro editor is not replaced. |
 
 ## High-Confidence Skill-Replacement Categories
 
@@ -59,6 +84,9 @@ These are the best repo expansion targets because the agent can inspect files, r
 | Image conversion/resizing | image compressors/converters | `image-batch-convert` | Created |
 | Backup verification | backup monitor/checker apps | `backup-audit` | Created |
 | Browser/cache cleaners | browser cleaner/cache cleaner utilities | `browser-profile-audit` | Created |
+| Startup/background item managers | login item scanners, cleaner startup modules | `launch-agent-audit` | Created |
+| Developer cache cleaners | Xcode/developer disk cleaners | `developer-cache-audit` | Created |
+| CSV/spreadsheet cleanup | simple data-cleaning utilities | `csv-clean-room` | Created |
 | PDF utilities | PDFgear, PDF Expert-style batch tasks | `pdf-batch-tools` | Candidate |
 | Office document utilities | Word/PowerPoint/Excel helper workflows | document/spreadsheet/presentation skills | Candidate, often already exists in many agent setups |
 | Meeting assistants | Zoom helper apps, note takers | meeting transcript/audio-to-summary skill | Candidate |
@@ -84,6 +112,6 @@ These should stay as real apps/services unless the user only wants a narrow repo
 
 1. `pdf-batch-tools`: merge/split/compress/extract/ocr report for local PDFs.
 2. `video-batch-utility`: use `ffmpeg` for compressing, extracting audio, clipping, and subtitle extraction.
-3. `pdf-batch-tools`: merge/split/compress/extract/ocr report for local PDFs.
-4. `calendar-meeting-audit`: inspect calendar/recording/transcript files and produce meeting summaries.
-5. `spreadsheet-clean-room`: normalize CSV/XLSX exports and produce repeatable data-cleaning reports.
+3. `calendar-meeting-audit`: inspect calendar/recording/transcript files and produce meeting summaries.
+4. `archive-batch-tools`: list, test, and extract archives safely.
+5. `plist-defaults-audit`: inspect macOS preferences/defaults before changing them.

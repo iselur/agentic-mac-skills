@@ -1,0 +1,4 @@
+interface:
+  display_name: "Launch Agent Audit"
+  short_description: "Inspect login and background launch items"
+  default_prompt: "Use $launch-agent-audit to inspect Mac startup/background items before disabling anything."

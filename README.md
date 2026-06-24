@@ -14,6 +14,9 @@ The first principle: do not build another cleaner app. Let an agent run small re
 | `image-batch-convert` | Simple image converter/resizer apps | Dry-run-first batch image resize/format conversion using built-in macOS `sips`, writing copies only. |
 | `backup-audit` | Basic backup health/storage checker apps | Reports Time Machine state, local snapshots, APFS usage, and common backup-sized folders. |
 | `browser-profile-audit` | Browser cache/profile cleaner scans | Reports browser profile/cache/support-folder sizes without reading history contents. |
+| `launch-agent-audit` | Startup item/background service scanners | Lists launch agents/daemons and login/background item clues without disabling anything. |
+| `developer-cache-audit` | Xcode/dev disk cleaner scans | Reports Xcode, simulator, package-manager, and project build cache sizes. |
+| `csv-clean-room` | Simple spreadsheet/CSV cleanup utilities | Profiles CSV files and writes normalized clean copies on request. |
 
 All scripts are read-only by default. They print report paths under the system temp directory and never delete files.
 
@@ -54,6 +57,10 @@ Use $mac-app-inventory to show which installed apps and app data folders are usi
 Use $image-batch-convert to dry-run converting these PNGs to 1600px JPEG copies.
 ```
 
+```text
+Use $developer-cache-audit to find Xcode and package-manager cache bloat.
+```
+
 ## What This Can and Cannot Replace
 
 Skills can replace utility apps whose core job is deterministic inspection, transformation, or report generation. They cannot replace apps where the value is a real-time service, a secure account, proprietary content, hardware integration, professional interactive UI, or regulated workflow.
@@ -67,6 +74,9 @@ Good skill candidates:
 - image/video format conversion
 - backup health checks
 - browser profile/cache bloat audits
+- startup/background item audits
+- developer cache reports
+- CSV cleanup and normalization
 - transcript cleanup and summarization
 - meeting note extraction from local recordings/transcripts
 - CSV/spreadsheet cleanup

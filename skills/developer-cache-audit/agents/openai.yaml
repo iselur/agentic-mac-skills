@@ -1,0 +1,4 @@
+interface:
+  display_name: "Developer Cache Audit"
+  short_description: "Find Xcode and dev-tool cache bloat"
+  default_prompt: "Use $developer-cache-audit to inspect developer cache and build artifact disk usage before deleting anything."
